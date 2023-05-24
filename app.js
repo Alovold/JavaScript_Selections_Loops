@@ -1,5 +1,5 @@
 // Exercise 1 Section
-/*console.log("EXERCISE 1:\n==========\n");
+console.log("EXERCISE 1:\n==========\n");
 
 for (let i = 1; i <= 100; i++) {
     if (i % 2 == 0) {
@@ -57,17 +57,18 @@ while (i <= 100){
 
 let value = Math.round((Math.random() * 500)); // creates a random number between 0 and 500
 let n = Math.round(Math.random() * (500 - 100) + 100); // creates a random number between 100 and 500
-let i;
-for (i = 0; i < n; i++) {
+let check = false;
+for (let i = 0; i < n; i++) {
     if (i == value) {
         console.log("Found value! It's " + i);
+        check = true;
         break;
     }
 }
-if (i != value) {
+if (check == false) {
     console.log("Did not find value.")
 }
-*/
+
 
 let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1); // creates a random number between 1 and 10
 let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1); // creates a random number between 1 and 10
